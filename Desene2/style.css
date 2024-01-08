@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(0, 0, 0, 0.966);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 5px; /* Adjust spacing between images */
+    max-width: 900px; /* Limit the maximum width of the album */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .album img {
+    width: calc(75% - 4.5px); /* Set the width of each image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
